@@ -1,0 +1,19 @@
+{
+  "name": "todo-website",
+  "version": "1.0.0",
+  "description": "Frontend Todo website with local Tailwind CSS build",
+  "main": "script.js",
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css",
+    "watch": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch",
+    "test": "echo \"No tests configured\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.2.4",
+    "tailwindcss": "^4.2.4"
+  }
+}
