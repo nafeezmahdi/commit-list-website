@@ -4,7 +4,7 @@
   "description": "Frontend Todo website with local Tailwind CSS build",
   "main": "script.js",
   "scripts": {
-    "build": "node node_modules/@tailwindcss/cli/dist/index.mjs -i ./src/input.css -o ./dist/output.css && copy index.html dist\\index.html",
+    "build": "node ./scripts/build.mjs",
     "build:old": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css",
     "watch": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch",
     "test": "echo \"No tests configured\""
