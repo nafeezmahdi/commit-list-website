@@ -3,6 +3,13 @@ const db = {
     { user_id: 1, name: "Nafeez Mahdi", email: "nafeez@example.com" },
     { user_id: 2, name: "Rahim Uddin", email: "rahim@example.com" },
     { user_id: 3, name: "Ayesha Khan", email: "ayesha@example.com" },
+    { user_id: 4, name: "Sadia Akter", email: "sadia@example.com" },
+    { user_id: 5, name: "Tanvir Hasan", email: "tanvir@example.com" },
+    { user_id: 6, name: "Farhana Rahman", email: "farhana@example.com" },
+    { user_id: 7, name: "Imran Hossain", email: "imran@example.com" },
+    { user_id: 8, name: "Nusrat Jahan", email: "nusrat@example.com" },
+    { user_id: 9, name: "Mehedi Alam", email: "mehedi@example.com" },
+    { user_id: 10, name: "Ritu Sultana", email: "ritu@example.com" },
   ],
   categories: [
     { category_id: 1, name: "Work" },
@@ -71,12 +78,176 @@ const db = {
       priority_id: 3,
       due_date: "2026-05-04",
     },
+    {
+      todo_id: 106,
+      title: "Review pull requests",
+      description: "Check open PRs and leave review notes",
+      user_id: 3,
+      category_id: 1,
+      status_id: 1,
+      priority_id: 2,
+      due_date: "2026-05-12",
+    },
+    {
+      todo_id: 107,
+      title: "Morning run",
+      description: "30 minute cardio run in park",
+      user_id: 3,
+      category_id: 4,
+      status_id: 2,
+      priority_id: 1,
+      due_date: "2026-05-09",
+    },
+    {
+      todo_id: 108,
+      title: "Organize desk",
+      description: "Clean desk and arrange office supplies",
+      user_id: 4,
+      category_id: 2,
+      status_id: 1,
+      priority_id: 1,
+      due_date: "2026-05-11",
+    },
+    {
+      todo_id: 109,
+      title: "Complete TypeScript tutorial",
+      description: "Finish modules on generics and utility types",
+      user_id: 4,
+      category_id: 3,
+      status_id: 2,
+      priority_id: 2,
+      due_date: "2026-05-14",
+    },
+    {
+      todo_id: 110,
+      title: "Team standup summary",
+      description: "Write and share standup summary with team",
+      user_id: 5,
+      category_id: 1,
+      status_id: 3,
+      priority_id: 2,
+      due_date: "2026-05-06",
+    },
+    {
+      todo_id: 111,
+      title: "Read book chapter",
+      description: "Read one chapter of productivity book",
+      user_id: 5,
+      category_id: 2,
+      status_id: 1,
+      priority_id: 1,
+      due_date: "2026-05-13",
+    },
+    {
+      todo_id: 112,
+      title: "Plan weekly study goals",
+      description: "Prepare a study checklist for next week",
+      user_id: 6,
+      category_id: 3,
+      status_id: 2,
+      priority_id: 2,
+      due_date: "2026-05-10",
+    },
+    {
+      todo_id: 113,
+      title: "Doctor appointment follow-up",
+      description: "Collect test report and update records",
+      user_id: 6,
+      category_id: 4,
+      status_id: 1,
+      priority_id: 3,
+      due_date: "2026-05-15",
+    },
+    {
+      todo_id: 114,
+      title: "Fix navbar issue",
+      description: "Resolve responsive alignment bug on mobile",
+      user_id: 7,
+      category_id: 1,
+      status_id: 2,
+      priority_id: 3,
+      due_date: "2026-05-09",
+    },
+    {
+      todo_id: 115,
+      title: "Renew internet bill",
+      description: "Pay monthly broadband bill online",
+      user_id: 7,
+      category_id: 2,
+      status_id: 1,
+      priority_id: 2,
+      due_date: "2026-05-08",
+    },
+    {
+      todo_id: 116,
+      title: "Practice SQL joins",
+      description: "Solve 20 SQL join problems",
+      user_id: 8,
+      category_id: 3,
+      status_id: 2,
+      priority_id: 2,
+      due_date: "2026-05-16",
+    },
+    {
+      todo_id: 117,
+      title: "Yoga session",
+      description: "Attend evening flexibility class",
+      user_id: 8,
+      category_id: 4,
+      status_id: 3,
+      priority_id: 1,
+      due_date: "2026-05-05",
+    },
+    {
+      todo_id: 118,
+      title: "Create sprint backlog",
+      description: "Add user stories for sprint planning",
+      user_id: 9,
+      category_id: 1,
+      status_id: 1,
+      priority_id: 3,
+      due_date: "2026-05-11",
+    },
+    {
+      todo_id: 119,
+      title: "Buy gift for friend",
+      description: "Choose and order birthday gift",
+      user_id: 9,
+      category_id: 2,
+      status_id: 2,
+      priority_id: 1,
+      due_date: "2026-05-12",
+    },
+    {
+      todo_id: 120,
+      title: "Revise data structures",
+      description: "Review trees and graph algorithms",
+      user_id: 10,
+      category_id: 3,
+      status_id: 1,
+      priority_id: 3,
+      due_date: "2026-05-17",
+    },
+    {
+      todo_id: 121,
+      title: "Meal prep",
+      description: "Prepare healthy meals for 3 days",
+      user_id: 10,
+      category_id: 4,
+      status_id: 2,
+      priority_id: 2,
+      due_date: "2026-05-10",
+    },
   ],
   subtasks: [
     { subtask_id: 1, todo_id: 101, title: "Design UI", is_completed: false },
     { subtask_id: 2, todo_id: 101, title: "Connect API", is_completed: false },
     { subtask_id: 3, todo_id: 102, title: "Read ERD notes", is_completed: true },
     { subtask_id: 4, todo_id: 104, title: "Warm-up", is_completed: true },
+    { subtask_id: 5, todo_id: 106, title: "Review coding standards", is_completed: false },
+    { subtask_id: 6, todo_id: 109, title: "Finish generic constraints section", is_completed: true },
+    { subtask_id: 7, todo_id: 114, title: "Test on small devices", is_completed: false },
+    { subtask_id: 8, todo_id: 120, title: "Solve 5 tree problems", is_completed: false },
   ],
   tags: [
     { tag_id: 1, name: "Urgent" },
@@ -89,11 +260,21 @@ const db = {
     { todo_id: 102, tag_id: 3 },
     { todo_id: 103, tag_id: 2 },
     { todo_id: 104, tag_id: 4 },
+    { todo_id: 114, tag_id: 1 },
+    { todo_id: 115, tag_id: 2 },
+    { todo_id: 116, tag_id: 3 },
+    { todo_id: 117, tag_id: 4 },
+    { todo_id: 118, tag_id: 1 },
+    { todo_id: 119, tag_id: 2 },
+    { todo_id: 120, tag_id: 3 },
+    { todo_id: 121, tag_id: 4 },
   ],
   reminders: [
     { reminder_id: 1, todo_id: 101, reminder_time: "2026-05-09 10:00" },
     { reminder_id: 2, todo_id: 103, reminder_time: "2026-05-06 08:00" },
     { reminder_id: 3, todo_id: 104, reminder_time: "2026-05-07 06:00" },
+    { reminder_id: 4, todo_id: 114, reminder_time: "2026-05-09 10:30" },
+    { reminder_id: 5, todo_id: 118, reminder_time: "2026-05-10 09:00" },
   ],
   comments: [
     {
@@ -110,21 +291,43 @@ const db = {
       text: "Practice more examples",
       created_at: "2026-05-05",
     },
+    {
+      comment_id: 3,
+      todo_id: 114,
+      user_id: 5,
+      text: "Please verify on iPhone width too",
+      created_at: "2026-05-07",
+    },
+    {
+      comment_id: 4,
+      todo_id: 118,
+      user_id: 1,
+      text: "Let's include auth stories in backlog",
+      created_at: "2026-05-07",
+    },
   ],
   attachments: [
     { attachment_id: 1, todo_id: 101, file_url: "design.png" },
     { attachment_id: 2, todo_id: 105, file_url: "presentation.pptx" },
+    { attachment_id: 3, todo_id: 118, file_url: "sprint-plan.xlsx" },
+    { attachment_id: 4, todo_id: 120, file_url: "dsa-notes.pdf" },
   ],
-  recurringTasks: [{ recurring_id: 1, todo_id: 103, repeat_type: "Daily" }],
+  recurringTasks: [
+    { recurring_id: 1, todo_id: 103, repeat_type: "Daily" },
+    { recurring_id: 2, todo_id: 121, repeat_type: "Weekly" },
+  ],
   sharedTodos: [
     { todo_id: 101, user_id: 2 },
     { todo_id: 104, user_id: 1 },
+    { todo_id: 114, user_id: 9 },
+    { todo_id: 118, user_id: 4 },
   ],
 };
 
 const el = {
   stats: document.getElementById("stats"),
   todoList: document.getElementById("todoList"),
+  pagination: document.getElementById("pagination"),
   usersList: document.getElementById("usersList"),
   statusesList: document.getElementById("statusesList"),
   prioritiesList: document.getElementById("prioritiesList"),
@@ -167,7 +370,10 @@ const state = {
   statusId: "",
   priorityId: "",
   tagId: "",
+  page: 1,
 };
+
+const PAGE_SIZE = 8;
 
 function renderStats() {
   const completed = db.todos.filter((t) => statusesById[t.status_id].status === "Completed").length;
@@ -216,28 +422,28 @@ function renderSidebar() {
   el.statusesList.innerHTML = db.statuses
     .map(
       (status) =>
-        `<button type="button" data-status-id="${status.status_id}" class="status-chip rounded-full px-3 py-1 text-xs font-semibold ${statusClass[status.status]} hover:opacity-90">${status.status}</button>`
+        `<button type="button" data-status-id="${status.status_id}" class="status-chip rounded-full px-4 py-2 text-sm font-semibold ${statusClass[status.status]} hover:opacity-90">${status.status}</button>`
     )
     .join("");
 
   el.prioritiesList.innerHTML = db.priorities
     .map(
       (priority) =>
-        `<button type="button" data-priority-id="${priority.priority_id}" class="priority-chip rounded-full px-3 py-1 text-xs font-semibold ${priorityClass[priority.level]} hover:opacity-90">${priority.level}</button>`
+        `<button type="button" data-priority-id="${priority.priority_id}" class="priority-chip rounded-full px-4 py-2 text-sm font-semibold ${priorityClass[priority.level]} hover:opacity-90">${priority.level}</button>`
     )
     .join("");
 
   el.categoriesList.innerHTML = db.categories
     .map(
       (category) =>
-        `<button type="button" data-category-id="${category.category_id}" class="category-chip rounded-full bg-indigo-100 px-3 py-1 text-xs font-semibold text-indigo-700 hover:bg-indigo-200">${category.name}</button>`
+        `<button type="button" data-category-id="${category.category_id}" class="category-chip rounded-full bg-indigo-100 px-4 py-2 text-sm font-semibold text-indigo-700 hover:bg-indigo-200">${category.name}</button>`
     )
     .join("");
 
   el.tagsList.innerHTML = db.tags
     .map(
       (tag) =>
-        `<button type="button" data-tag-id="${tag.tag_id}" class="tag-chip rounded-full bg-purple-100 px-3 py-1 text-xs font-semibold text-purple-700 hover:bg-purple-200">${tag.name}</button>`
+        `<button type="button" data-tag-id="${tag.tag_id}" class="tag-chip rounded-full bg-purple-100 px-4 py-2 text-sm font-semibold text-purple-700 hover:bg-purple-200">${tag.name}</button>`
     )
     .join("");
 
@@ -319,13 +525,23 @@ function escapeHtml(value) {
 
 function renderTodos() {
   const todos = filterTodos();
-  if (todos.length === 0) {
+  const total = todos.length;
+
+  const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
+  if (state.page > totalPages) state.page = totalPages;
+  if (state.page < 1) state.page = 1;
+
+  const start = (state.page - 1) * PAGE_SIZE;
+  const pageItems = todos.slice(start, start + PAGE_SIZE);
+
+  if (pageItems.length === 0) {
     el.todoList.innerHTML = `<p class="rounded-md border border-dashed border-slate-300 p-4 text-sm text-slate-500">No todos found for the selected filters.</p>`;
+    if (el.pagination) el.pagination.innerHTML = "";
     return;
   }
 
-  el.todoList.innerHTML = todos
-    .map((todo) => {
+  el.todoList.innerHTML = pageItems
+    .map((todo, i) => {
       const user = usersById[todo.user_id];
       const category = categoriesById[todo.category_id];
       const status = statusesById[todo.status_id]?.status;
@@ -336,7 +552,12 @@ function renderTodos() {
       const safeDescription = escapeHtml(todo.description);
 
       return `
-        <article id="todo-${todo.todo_id}" data-todo-id="${todo.todo_id}" class="rounded-lg border border-slate-200 p-4 transition-shadow">
+        <article
+          id="todo-${todo.todo_id}"
+          data-todo-id="${todo.todo_id}"
+          style="animation-delay: ${i * 70}ms"
+          class="todo-card-animate rounded-lg border border-slate-200 p-4 transition-shadow hover:shadow-md"
+        >
           <div class="flex flex-wrap items-start justify-between gap-3">
             <div>
               <h3 class="text-lg font-semibold">
@@ -347,8 +568,8 @@ function renderTodos() {
               <p class="text-sm text-slate-600">${safeDescription}</p>
             </div>
             <div class="flex gap-2">
-              <button type="button" data-card-status-id="${todo.status_id}" class="rounded-full px-3 py-1 text-xs font-semibold ${statusClass[status]} hover:opacity-90">${status}</button>
-              <button type="button" data-card-priority-id="${todo.priority_id}" class="rounded-full px-3 py-1 text-xs font-semibold ${priorityClass[priority]} hover:opacity-90">${priority}</button>
+              <button type="button" data-card-status-id="${todo.status_id}" class="rounded-full px-3 py-1.5 text-sm font-semibold ${statusClass[status]} hover:opacity-90">${status}</button>
+              <button type="button" data-card-priority-id="${todo.priority_id}" class="rounded-full px-3 py-1.5 text-sm font-semibold ${priorityClass[priority]} hover:opacity-90">${priority}</button>
             </div>
           </div>
 
@@ -360,7 +581,7 @@ function renderTodos() {
             }</p>
             <p><span class="font-medium text-slate-800">Category:</span> ${
               category
-                ? `<button type="button" data-card-category-id="${category.category_id}" class="ml-1 rounded bg-indigo-100 px-2 py-0.5 text-xs font-semibold text-indigo-700 hover:bg-indigo-200">${category.name}</button>`
+                ? `<button type="button" data-card-category-id="${category.category_id}" class="ml-1 rounded bg-indigo-100 px-3 py-1 text-sm font-semibold text-indigo-700 hover:bg-indigo-200">${category.name}</button>`
                 : "-"
             }</p>
             <p><span class="font-medium text-slate-800">Due Date:</span> ${todo.due_date}</p>
@@ -375,7 +596,7 @@ function renderTodos() {
                 ? related.tags
                     .map(
                       (t) =>
-                        `<button type="button" data-card-tag-id="${t.tag_id}" class="ml-1 rounded bg-purple-100 px-2 py-0.5 text-xs font-semibold text-purple-700 hover:bg-purple-200">${t.name}</button>`
+                        `<button type="button" data-card-tag-id="${t.tag_id}" class="ml-1 rounded bg-purple-100 px-3 py-1 text-sm font-semibold text-purple-700 hover:bg-purple-200">${t.name}</button>`
                     )
                     .join("")
                 : "<span class='text-slate-500'>None</span>"
@@ -394,36 +615,75 @@ function renderTodos() {
       `;
     })
     .join("");
+
+  if (el.pagination) {
+    const showingFrom = start + 1;
+    const showingTo = Math.min(start + PAGE_SIZE, total);
+    const canPrev = state.page > 1;
+    const canNext = state.page < totalPages;
+
+    el.pagination.innerHTML = `
+      <p class="text-sm text-slate-600">
+        Showing <span class="font-semibold text-slate-900">${showingFrom}-${showingTo}</span>
+        of <span class="font-semibold text-slate-900">${total}</span>
+      </p>
+      <div class="flex items-center justify-end gap-2">
+        <button
+          type="button"
+          data-page="prev"
+          class="rounded-md border border-slate-300 bg-white px-3 py-2 text-sm font-semibold text-slate-700 shadow-sm hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-50"
+          ${canPrev ? "" : "disabled"}
+        >
+          ◀ Prev
+        </button>
+        <span class="min-w-[8ch] text-center text-sm font-semibold text-slate-700">Page ${state.page}/${totalPages}</span>
+        <button
+          type="button"
+          data-page="next"
+          class="rounded-md border border-slate-300 bg-white px-3 py-2 text-sm font-semibold text-slate-700 shadow-sm hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-50"
+          ${canNext ? "" : "disabled"}
+        >
+          Next ▶
+        </button>
+      </div>
+    `;
+  }
 }
 
 function bindEvents() {
   el.searchInput.addEventListener("input", (e) => {
     state.search = e.target.value.trim().toLowerCase();
+    state.page = 1;
     renderTodos();
   });
 
   el.userFilter.addEventListener("change", (e) => {
     state.userId = e.target.value;
+    state.page = 1;
     renderTodos();
     highlightActiveChips();
   });
   el.categoryFilter.addEventListener("change", (e) => {
     state.categoryId = e.target.value;
+    state.page = 1;
     renderTodos();
     highlightActiveChips();
   });
   el.statusFilter.addEventListener("change", (e) => {
     state.statusId = e.target.value;
+    state.page = 1;
     renderTodos();
     highlightActiveChips();
   });
   el.priorityFilter.addEventListener("change", (e) => {
     state.priorityId = e.target.value;
+    state.page = 1;
     renderTodos();
     highlightActiveChips();
   });
   el.tagFilter.addEventListener("change", (e) => {
     state.tagId = e.target.value;
+    state.page = 1;
     renderTodos();
     highlightActiveChips();
   });
@@ -433,6 +693,7 @@ function bindEvents() {
     if (!chip) return;
     state.userId = state.userId === chip.dataset.userId ? "" : chip.dataset.userId;
     el.userFilter.value = state.userId;
+    state.page = 1;
     renderTodos();
     highlightActiveChips();
   });
@@ -442,6 +703,7 @@ function bindEvents() {
     if (!chip) return;
     state.statusId = state.statusId === chip.dataset.statusId ? "" : chip.dataset.statusId;
     el.statusFilter.value = state.statusId;
+    state.page = 1;
     renderTodos();
     highlightActiveChips();
   });
@@ -451,6 +713,7 @@ function bindEvents() {
     if (!chip) return;
     state.priorityId = state.priorityId === chip.dataset.priorityId ? "" : chip.dataset.priorityId;
     el.priorityFilter.value = state.priorityId;
+    state.page = 1;
     renderTodos();
     highlightActiveChips();
   });
@@ -460,6 +723,7 @@ function bindEvents() {
     if (!chip) return;
     state.categoryId = state.categoryId === chip.dataset.categoryId ? "" : chip.dataset.categoryId;
     el.categoryFilter.value = state.categoryId;
+    state.page = 1;
     renderTodos();
     highlightActiveChips();
   });
@@ -469,6 +733,7 @@ function bindEvents() {
     if (!chip) return;
     state.tagId = state.tagId === chip.dataset.tagId ? "" : chip.dataset.tagId;
     el.tagFilter.value = state.tagId;
+    state.page = 1;
     renderTodos();
     highlightActiveChips();
   });
@@ -479,6 +744,7 @@ function bindEvents() {
       const clickedUserId = userButton.dataset.cardUserId;
       state.userId = state.userId === clickedUserId ? "" : clickedUserId;
       el.userFilter.value = state.userId;
+      state.page = 1;
       renderTodos();
       highlightActiveChips();
       return;
@@ -489,6 +755,7 @@ function bindEvents() {
       const clickedStatusId = statusButton.dataset.cardStatusId;
       state.statusId = state.statusId === clickedStatusId ? "" : clickedStatusId;
       el.statusFilter.value = state.statusId;
+      state.page = 1;
       renderTodos();
       highlightActiveChips();
       return;
@@ -499,6 +766,7 @@ function bindEvents() {
       const clickedPriorityId = priorityButton.dataset.cardPriorityId;
       state.priorityId = state.priorityId === clickedPriorityId ? "" : clickedPriorityId;
       el.priorityFilter.value = state.priorityId;
+      state.page = 1;
       renderTodos();
       highlightActiveChips();
       return;
@@ -509,6 +777,7 @@ function bindEvents() {
       const clickedCategoryId = categoryButton.dataset.cardCategoryId;
       state.categoryId = state.categoryId === clickedCategoryId ? "" : clickedCategoryId;
       el.categoryFilter.value = state.categoryId;
+      state.page = 1;
       renderTodos();
       highlightActiveChips();
       return;
@@ -519,10 +788,23 @@ function bindEvents() {
       const clickedTagId = tagButton.dataset.cardTagId;
       state.tagId = state.tagId === clickedTagId ? "" : clickedTagId;
       el.tagFilter.value = state.tagId;
+      state.page = 1;
       renderTodos();
       highlightActiveChips();
     }
   });
+
+  if (el.pagination) {
+    el.pagination.addEventListener("click", (e) => {
+      const btn = e.target.closest("[data-page]");
+      if (!btn) return;
+      const dir = btn.dataset.page;
+      if (dir === "prev") state.page -= 1;
+      if (dir === "next") state.page += 1;
+      renderTodos();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
 
   el.resetFiltersBtn.addEventListener("click", () => {
     state.search = "";
@@ -531,6 +813,7 @@ function bindEvents() {
     state.statusId = "";
     state.priorityId = "";
     state.tagId = "";
+    state.page = 1;
 
     el.searchInput.value = "";
     el.userFilter.value = "";

@@ -4,11 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo Details | CommitList</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/commitlist-logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./output.css" />
   </head>
-  <body class="min-h-screen bg-slate-100 text-slate-900">
-    <header class="bg-white shadow-sm">
-      <div class="mx-auto flex max-w-4xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+  <body class="min-h-screen animated-page-bg text-slate-900">
+    <header class="sticky top-0 z-50 relative backdrop-blur shadow-sm">
+      <div class="animated-header-bg absolute inset-0 -z-10"></div>
+      <div class="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-4 relative z-10 sm:flex-row sm:items-center sm:justify-between sm:gap-6 sm:px-6 lg:px-8">
         <div class="flex items-center gap-3">
           <img src="./assets/commitlist-logo.svg" alt="CommitList logo" class="h-11 w-11 rounded-xl shadow-sm" />
           <div>
@@ -22,13 +27,33 @@
           </p>
           </div>
         </div>
-        <a href="./index.html" class="rounded-md border border-slate-300 px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100">Back to Dashboard</a>
+        <a href="./index.html" class="inline-flex items-center gap-1 rounded-md border border-slate-300 px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-slate-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+          Back to Dashboard
+        </a>
       </div>
     </header>
 
-    <main class="mx-auto max-w-4xl px-4 py-6 sm:px-6 lg:px-8">
+    <main class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
       <div id="todoDetails"></div>
     </main>
+
+    <footer class="mt-12">
+      <div class="mx-auto max-w-7xl px-4 pb-8 sm:px-6 lg:px-8">
+        <div class="rounded-xl border border-white/60 bg-white/70 backdrop-blur p-4 text-center text-sm text-slate-600 shadow-sm">
+          <span id="footerYear"></span> &copy; <span class="font-semibold text-slate-800">NM</span>. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        const el = document.getElementById("footerYear");
+        if (el) el.textContent = String(new Date().getFullYear());
+      })();
+    </script>
 
     <script src="./todo-details.js"></script>
   </body>

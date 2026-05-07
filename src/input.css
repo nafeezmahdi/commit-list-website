@@ -1,3 +1,74 @@
 @import "tailwindcss";
 @source "../*.html";
 @source "../*.js";
+
+@layer base {
+  :root {
+    --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+}
+
+@keyframes headerBgShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-header-bg {
+  background: linear-gradient(
+    90deg,
+    rgba(99, 102, 241, 0.25),
+    rgba(168, 85, 247, 0.25),
+    rgba(56, 189, 248, 0.22)
+  );
+  background-size: 200% 200%;
+  animation: headerBgShift 10s ease-in-out infinite;
+}
+
+@keyframes pageBgShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-page-bg {
+  background: linear-gradient(135deg, #eef2ff, #f8fafc, #f5f3ff);
+  background-size: 200% 200%;
+  animation: pageBgShift 12s ease-in-out infinite;
+}
+
+@keyframes todoCardFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.todo-card-animate {
+  animation: todoCardFadeUp 450ms ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animated-header-bg,
+  .animated-page-bg,
+  .todo-card-animate {
+    animation: none !important;
+  }
+}
